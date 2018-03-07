@@ -49,9 +49,9 @@ Initially stored as JSON files (folder named _articles_), they were then indexed
 
 | Output | Section |
 | ---- | ---- |
-| theguardianfootballwords.html | Football |
+| theguardianfootballwords.html* | Football |
 
-...
+... TBD ...
 
 ### Topic Modelling
 
@@ -62,8 +62,8 @@ Initially stored as JSON files (folder named _articles_), they were then indexed
 
 | Output | Comments | Section |
 | ---- | ---- | ---- |
-| football_lda40.html | football_lda40.csv (TBD) | Football |
-| world_lda40.html | world_lda40.csv (TBD) | World |
+| football_lda40.html* | football_lda40.csv* | Football |
+| world_lda40.html* | world_lda40.csv* | World |
 
 I used Topic Modelling to attempt to identify the underlying themes of the articles of the two sections. To do so, I extracted 40 topics from each section and they can be seen their respective pyLDAvis visualizations. 
 For each of the sections, most topics seemed quite satisfactory, as in they were clearly distinguishable and my comments on each of the topics can be found in their respective csv files.
