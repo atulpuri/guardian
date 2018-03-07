@@ -12,8 +12,8 @@ Future work includes identification of Named Entities and relations between them
 
 ## Contents
 * Data Collection 
-* Topic Modelling 
 * Word2Vec Experiment
+* Topic Modelling 
 * Utilities
 
 ### Data Collection
