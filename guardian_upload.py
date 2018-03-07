@@ -1,15 +1,11 @@
 from os import path
-#os.chdir("D:/Projects/theGuardian")
 from elasticsearch import Elasticsearch
 import json
 import time
 from datetime import timedelta
 import utils
 
-try:
-    es = Elasticsearch(['localhost'],port=9200)
-except:
-    es = Elasticsearch(['localhost'],port=9200, http_auth=('elastic','theguardian'))
+es = Elasticsearch(['localhost'],port=9200)
 
 meta = { "index" : { "_index" : "guardian", "_type" : "articles" } }
 res = []
@@ -18,13 +14,7 @@ unsuccess = []
 file_names = []
 
 ## to upload recently downloaded files
-#start_date = date(2017,11,24)
-#end_date = date(2017,11,24)
 start_date, end_date = utils.get_settings(False)
-#print(start_date)
-#print(end_date)
-#start_date = date(2017,11,10)
-#end_date = date(2017,11,24)
 
 dayrange = range((end_date - start_date).days + 1)
 for daycount in dayrange:
