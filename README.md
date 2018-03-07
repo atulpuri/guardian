@@ -12,7 +12,8 @@ This repository contains my experiments with news articles from The Guardian...
 
 ### Data Collection
 
-The articles were collected using the The Guardian's API whose reference can be found at: http://open-platform.theguardian.com/documentation/
+The articles were collected using the The Guardian's API whose reference can be found at: 
+http://open-platform.theguardian.com/documentation/
 
 Files: 
 1. guardian_download.py
@@ -33,7 +34,7 @@ Requires:
 
 Outputs:
 1. football_lda40.html
-2. world_lda40.py
+2. world_lda40.html
 
 ### Word2Vec Experiment
 
