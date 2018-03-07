@@ -5,8 +5,8 @@ Created on Sat Nov 11 18:00:23 2017
 @author: Atul
 """
 
-from os import chdir
-chdir("D:/Projects/theGuardian")
+#from os import chdir
+#chdir("D:/Projects/guardian")
 import pandas as pd
 from elasticsearch import Elasticsearch
 import dataPrep
@@ -118,8 +118,3 @@ hover.tooltips = OrderedDict([
 
 output_file("theguardianfootballwords.html", title="The Guardian - Football")
 show(p)
-
-#articles['date'] = [hit['_source']['webPublicationDate'] for hit in search_res['hits']['hits']]
-#from datetime import datetime
-#max(datetime.strptime(x,"%Y-%m-%dT%H:%M:%SZ") for x in articles['date'])
-#min(datetime.strptime(x,"%Y-%m-%dT%H:%M:%SZ") for x in articles['date'])
