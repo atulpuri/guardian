@@ -5,8 +5,8 @@ Created on Fri Mar  2 23:05:27 2018
 @author: Atul
 """
 
-import os
-os.chdir("D:/Projects/theGuardian")
+#import os
+#os.chdir("D:/Projects/guardian")
 import pandas as pd
 from elasticsearch import Elasticsearch
 import dataPrep
@@ -26,7 +26,7 @@ import json
 import logging
 logging.basicConfig(filename='lda_model.log', format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-es = Elasticsearch(['localhost'],port=9200) #,http_auth=('elastic','theguardian'))
+es = Elasticsearch(['localhost'],port=9200) 
 
 search_res = es.search(index = 'guardian', size=2500,
                        timeout='150s',
