@@ -2,17 +2,13 @@
 """
 Created on Wed Mar  8 13:29:37 2017
 
-@author: 584815
+@author: Atul
 """
 import pandas as pd
-#import email
 import re
 from nltk.corpus import stopwords
 from nltk.corpus import words as wordList
 from nltk.corpus import names
-#from sys import path
-#path.append('D:\Python\smart_open-master')
-#path.append('D:\Python\gensim-develop')
 from gensim.parsing.preprocessing import STOPWORDS as sw
 from gensim.models import phrases 
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -105,8 +101,3 @@ def clean_text(df_input,col='content',remove_unusual=False,remove_stopwords=Fals
 
     print("data cleaned")
     return df_input
-
-
-""" To Do:
-        Add functionality to get Cc and Bcc from emails
-"""
