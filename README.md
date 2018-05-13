@@ -15,6 +15,7 @@ Future work includes identification of Named Entities and relations between them
 * Word2Vec Experiment
 * Topic Modelling 
 * Utilities
+* Spelling Corrector 
 
 ### Data Collection
 
@@ -78,3 +79,7 @@ The overlap amongst topics was also an interesting phenomenon to observe as it a
 | settings.json | Preset settings of dates for dowload |
 | guardian_creds.json | Stores API key |
 | settings_u.json | Temp file storing settings of dates for upload |
+
+### Spelling Corrector
+
+Inspired by http://norvig.com/spell-correct.html
